@@ -3,8 +3,4 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 title: [QuantumSpinozist]
-description: [Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum.]
+description: [I am interested in Machine Learning, Programming, Matheamtics and sometimes Physics (I might also write about other things occasionaly).]
