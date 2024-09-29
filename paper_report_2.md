@@ -26,7 +26,7 @@ There is an additional mechanism to disinsentivise the AL loop from picking fram
 To further improve the diversity of the selection the authors use CLAUS. The model learns a k-means cluster representation of the videos using deep clustering.
 At each iteration we pick videos from each cluster proportional to its size.
 
-## Hypotheses and Experiments
+## Spatio-Temporal Weighted Loss
 
 
 
