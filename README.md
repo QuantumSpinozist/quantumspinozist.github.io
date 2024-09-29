@@ -4,6 +4,7 @@
 ## Paper Reports
 
 ### Paper Report 2: Hybrid Active Learning via Deep Clustering for Video Action Detection
+![test](docs/assets/images/paper_2.png)
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.
 [read more](paper_report_2.md)
 
