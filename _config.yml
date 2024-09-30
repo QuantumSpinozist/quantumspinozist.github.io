@@ -4,3 +4,12 @@ plugins:
 
 title: [QuantumSpinozist]
 description: ['I am interested in Machine Learning, Programming, Mathematics and sometimes Physics (I might also write about other things occasionally).']
+
+# Enable MathJax for LaTeX
+katex: false  # Make sure KaTeX is not used if MathJax is preferred
+mathjax: true  # Enable MathJax
+
+# Optionally, you can add additional configuration
+mathjax_config:
+  version: "2.7.7"  # Specify the MathJax version (or remove to use the latest)
+
