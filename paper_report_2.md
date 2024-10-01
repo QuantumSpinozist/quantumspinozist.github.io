@@ -15,9 +15,9 @@ new videos and frames are chosen.
 For each video informative frames are identified by calculating the pixel level uncertainty of the model over $$R$$ runs using Monte Carlo Dropout
 (so some parts of the net are randomly switched off during inference) with 
 
-{% raw %}
+
 $$U = \frac{1}{R}\sum_{k=0}^R -\log(M(p, k))$$
-{% endraw %}
+
 where $M(p,k)$ is the model prediction value at pixel $p$ and MC dropout run $k$. Now the top $A$ frames are identified and the video gets an informativeness score of
 
 $$ V_{score} = \frac{1}{A} \sum_{f=1}^A \sum_{p} U_{f, p}.$$
