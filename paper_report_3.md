@@ -6,6 +6,6 @@
 
 ## Problem statement
 
-We are given and i.i.d. dataset $$ { x^{i}}_{i=0, ..., N}$$
+We are given and i.i.d. dataset $$ \{ x^{i} \}_{i=0, ..., N}$$
 
 
