@@ -6,7 +6,7 @@
 ### Paper Report 2: Hybrid Active Learning via Deep Clustering for Video Action Detection
 <img src="docs/assets/images/paper_2.png" width="600"/>
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.
+This paper presents a novel active learning method designed to drastically reduce the number of annotated frames required for video action detection.
 [read more](paper_report_2.md)
 
 ### Paper Report 1: Does Knowledge Distillation Really Work?
