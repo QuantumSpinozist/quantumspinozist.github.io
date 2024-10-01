@@ -27,6 +27,18 @@ $$ \log(p_{\theta}(x)) = D_{KL}(q_{\phi}(z|x) \mid\mid p_{\theta}(z|x) ) + L(\th
 where $$D_{KL}( \cdot \mid\mid \cdot )$$ is the Kullback–Leibler divergence and $$L(\theta, \phi; x)$$ is the aforementioned evidence lower bound which can
 be expressed as
 
-$$ L(\theta, \phi; x) =  -D_{KL}(q_{\phi}(z|x) \mid\mid p_{\theta}(z) ) + \mathbb{E}_{q_{\phi}(z|x)} \left[ \log p_{\theta}(x|z) \right]$$
+$$ L(\theta, \phi; x) =  -D_{KL}(q_{\phi}(z|x) \mid\mid p_{\theta}(z) ) + \mathbb{E}_{q_{\phi}(z|x)} \left[ \log p_{\theta}(x|z) \right].$$
+
+Since the KL divergence is strictly non-negative, $$ L(\theta, \phi; x) $$ can be used as a lower bound on the marginal log-likelihood (as the name suggests).
+Therefore maximizing ELBO (or minimizing its negative) defines our learning objective. But naively applying gradient based optimization algorithms would lead to problems
+now. This is because the regular Monte Carlo estimatior of the gradient in $$ \phi $$ has an impractically high variance making the approximation effectively unusable.
+
+## The reparameterization trick, the SGVB estimator and the AEVB algorithm
+
+In order to circumvent this problem the authors propose the so called reparameterization trick. Therein we express
+the latent variable $$z \sim q_{\phi}(z|x)$$ via an auxiliary and static (as in fully unparameterized) random variable
+$$ \epsilon \sim  p(\epsilon)$$ as $$ z = g_{\phi}(\epsilon, x) $$. To be concrete, in the context of the standard variational encoder
+$$ z|x$$ will be assumed to be gaussian with mean and standard deviation being produced by the encoder network. The reparameterization function
+is then simply $$ g_{\phi}(\epsilon, x) = \mu + \sigma \cdot \epsilon $$ with $$ \epsilon \sim \mathcal{N}(0, 1)$$.
 
 
