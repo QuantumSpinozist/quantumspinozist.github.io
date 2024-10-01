@@ -38,6 +38,10 @@ $$ \phi_f (p) = \min_{f_a} Dist(f, f_a) \cdot \frac{1}{W+1} \sum_{w=f-W}^{w=f+W}
 The mean pixel value is put to 1 when it is not betwen two given values. This makes it so that consistent values get a high score, while pixels that change in the given
 temporal region tend to receive lower weights. The overall loss is then simply the weighted mean over all frames of the regular BCE.
 
+```math
+e^{i\pi} + 1 = 0
+```
+
 
 ## Results
 
