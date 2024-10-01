@@ -11,9 +11,10 @@ We are given and i.i.d. dataset $$ \{ x^{i} \}_{i=0, ..., N}$$ that where $$x$$ 
 $$z \sim p_{\theta^*}(z),\\ x|z \sim p_{\theta^*}(x|z).$$
 
 Both PDFs are assumed to be differentiable in $$z$$ and $$\theta$$ almost everywhere. Now the central idea of variational bayes methods is to approximate the true
-a posteriori distribution $$ p_{\theta^*}(z|x) $$ by some parametric distribution $$ p_{\phi}(z|x)$$ for the optimal choice of $$ \phi $$.
+a posteriori distribution $$ p_{\theta^*}(z|x) $$ by some parametric distribution $$ q_{\phi}(z|x)$$ for the optimal choice of $$ \phi $$.
 
-
+Ultimately we will want to represent both $$ p_{\theta^*}(z|x) $$ and $$ q_{\phi}(z|x) $$ as MLPs. In the language of autoencoders $$ p_{\theta^*}(z|x) $$
+is therefore called the encoder and $$ q_{\phi}(z|x) $$ the decoder.
 
 
 
