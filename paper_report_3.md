@@ -19,7 +19,14 @@ is therefore called the encoder and $$ q_{\phi}(z|x) $$ the decoder.
 
 ## The Evidence Lower Bound (ELBO)
 
-In the paper the name variational lower bound is used, but evidence lower bound seems to be more common nowadays (at least in my exerience).
+In the paper the name variational lower bound is used, but evidence lower bound seems to be more common nowadays (at least in my experience).
+The marginal likelihood of each datapoint can be expressed as 
 
+$$ \log(p_{\theta}(x)) = D_{KL}(q_{\phi}(z|x) \mid\mid p_{\theta}(z|x) ) + L(\theta, \phi; x)$$
+
+where $$D_{KL}( \cdot \mid\mid \cdot )$$ is the Kullback–Leibler divergence and $$L(\theta, \phi; x)$$ is the aforementioned evidence lower bound which can
+be expressed as
+
+$$ L(\theta, \phi; x) =  -D_{KL}(q_{\phi}(z|x) \mid\mid p_{\theta}(z) ) + \mathbb{E}_{q_{\phi}(z|x)} \left[ \log p_{\theta}(x|z) \right]$$
 
 
