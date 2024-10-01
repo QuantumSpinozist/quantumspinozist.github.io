@@ -18,7 +18,7 @@ For each video informative frames are identified by calculating the pixel level 
 
 $$U = \frac{1}{R}\sum_{k=0}^R -\log(M(p, k))$$
 
-where $M(p,k)$ is the model prediction value at pixel $p$ and MC dropout run $k$. Now the top $A$ frames are identified and the video gets an informativeness score of
+where $$M(p,k)$$ is the model prediction value at pixel $$p$$ and MC dropout run $$k$$. Now the top $$A$$ frames are identified and the video gets an informativeness score of
 
 $$ V_{score} = \frac{1}{A} \sum_{f=1}^A \sum_{p} U_{f, p}.$$
 
@@ -31,7 +31,7 @@ At each iteration we pick videos from each cluster proportional to its size.
 To effectively use the limited number of labelled frames available for each video the authors propose a new kind of loss, called STeW.
 First pseudolabels are created by interpolating between the labelled frames. Due to temporal consistency the pseudolabels close to labelled frames
 will be more trustworthy on average. To encode this effectively in the learning scheme each pseudolabelled frame gets a pixelwise weight that is calculated as the product of
-the distance to the next labelled frame and the mean of the pixel value over the next and last $W$ neighboring frames
+the distance to the next labelled frame and the mean of the pixel value over the next and last $$W$$ neighboring frames
 
 $$ \phi_f (p) = \min_{f_a} Dist(f, f_a) \cdot \frac{1}{W+1} \sum_{w=f-W}^{w=f+W} x(f, p).$$
 
