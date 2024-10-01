@@ -3,6 +3,10 @@
 
 ## Paper Reports
 
+### Paper Report 3: Auto-Encoding Variational Bayes
+I would like to continue this series by covering some classic papers, starting with the discovery (or invention, whichever you prefer) of the Variational Autoencoder by Diederik P. Kingma and Max Welling in 2013.
+[read more](paper_report_3.md)
+
 ### Paper Report 2: Hybrid Active Learning via Deep Clustering for Video Action Detection
 <img src="docs/assets/images/paper_2.png" width="600"/>
 
