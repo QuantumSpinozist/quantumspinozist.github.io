@@ -41,4 +41,9 @@ $$ \epsilon \sim  p(\epsilon)$$ as $$ z = g_{\phi}(\epsilon, x) $$. To be concre
 $$ z|x$$ will be assumed to be gaussian with mean and standard deviation being produced by the encoder network. The reparameterization function
 is then simply $$ g_{\phi}(\epsilon, x) = \mu + \sigma \cdot \epsilon $$ with $$ \epsilon \sim \mathcal{N}(0, 1)$$.
 
+The paper presents to different ways to approximate the evidence lower bound $L(\theta, \phi; x)$ (essentially the loss function), also called Stochastic Gradient Variational Bayes
+(SGVB) estimators. From the form $L(\theta, \phi; x) = \mathbb{E}_{q_{\phi}(z|x)} \left[ \log p_{\theta}(x, z) - \log q_{\phi}(z | x) \right]$ you get a generic SGVB estimator by applying
+the simple MC approximation
+$$ L^A(\theta, \phi; x) =\frac{1}{L} \sum_{l = 1}^L( \log p_{\theta}(x, z^{(l)}) - \log q_{\phi}(z^{(l)} | x) )$$
+
 
