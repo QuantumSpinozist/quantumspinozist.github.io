@@ -42,8 +42,16 @@ $$ z|x$$ will be assumed to be gaussian with mean and standard deviation being p
 is then simply $$ g_{\phi}(\epsilon, x) = \mu + \sigma \cdot \epsilon $$ with $$ \epsilon \sim \mathcal{N}(0, 1)$$.
 
 The paper presents to different ways to approximate the evidence lower bound $L(\theta, \phi; x)$ (essentially the loss function), also called Stochastic Gradient Variational Bayes
-(SGVB) estimators. From the form $L(\theta, \phi; x) = \mathbb{E}_{q_{\phi}(z|x)} \left[ \log p_{\theta}(x, z) - \log q_{\phi}(z | x) \right]$ you get a generic SGVB estimator by applying
-the simple MC approximation
-$$ L^A(\theta, \phi; x) =\frac{1}{L} \sum_{l = 1}^L( \log p_{\theta}(x, z^{(l)}) - \log q_{\phi}(z^{(l)} | x) )$$
+(SGVB) estimators. From the form $L(\theta, \phi; x) = \mathbb{E}_{q_{\phi}(z|x)} \left[ \log p_{\theta}(x, z) - \log q_{\phi}(z | x) \right]$ you get the generic SGVB estimator by applying
+the simple MC approximation where we take $l$ samples of $\epsilon$ and calculate $z$ using the reparameterization trick
+
+$$ L^A(\theta, \phi; x) =\frac{1}{l} \sum_{k = 1}^L( \log p_{\theta}(x, z^{(k)}) - \log q_{\phi}(z^{(k)} | x) ) \approx L(\theta, \phi; x).$$
+
+In many cases it is possible to anaytically determine the KL-Divergence so one can use the other form of the ELBO we presented earlier. The resulting
+estimator usually has a smaller variance
+
+$$ L^B(\theta, \phi; x) =  -D_{KL}(q_{\phi}(z|x) \mid\mid p_{\theta}(z) ) + \frac{1}{l} \sum_{k = 1}^L ( \log p_{\theta}(x|z^{(k)}) ).$$
+
+
 
 
