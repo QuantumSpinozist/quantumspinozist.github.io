@@ -58,7 +58,7 @@ To get the Variational Auto-Encoder in its most common form (for continous data)
 the latent variable is gaussian, like our example in the previous section. Analytically calculating the KL-Divergence results int the following form for the
 second SGVB estimator
 
-$$ L^B(\theta, \phi; x) = \frac{1}{2} \sum_{j=1}^J(1+\log(\sigma_j^2) - \mu_j^2 - \sigma_j^2)+ \frac{1}{l} \sum_{k = 1}^l ( \log p_{\theta}(x|z^{(k)}) ).$$
+$$L^B(\theta, \phi; x) = \frac{1}{2} \sum_{j=1}^J(1+\log(\sigma_j^2) - \mu_j^2 - \sigma_j^2)+ \frac{1}{l} \sum_{k = 1}^l ( \log p_{\theta}(x|z^{(k)}) ).$$
 
 
 
