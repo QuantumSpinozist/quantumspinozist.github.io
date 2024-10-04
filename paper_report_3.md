@@ -54,11 +54,22 @@ $$ L^B(\theta, \phi; x) =  -D_{KL}(q_{\phi}(z|x) \mid\mid p_{\theta}(z) ) + \fra
 
 ## The Variational Auto-Encoder
 
-To get the Variational Auto-Encoder in its most common form (for continous data) both encoder $$ p_{\theta^*}(z|x) $$ and decoder $$ q_{\phi}(z|x) $$ are MLPs and
-the latent variable is gaussian, like our example in the previous section. Analytically calculating the KL-Divergence results int the following form for the
+To get the Variational Auto-Encoder in its most common form (for continous data) both encoder $$ p_{\theta}(z|x) $$ and decoder $$ q_{\phi}(z|x) $$ are MLPs and
+the latent variable is gaussian, like our example in the previous section. Analytically calculating the KL-Divergence results in the following form for the
 second SGVB estimator
 
-$$L^B(\theta, \phi; x) = \frac{1}{2} \sum_{j=1}^J(1+\log(\sigma_j^2) - \mu_j^2 - \sigma_j^2)+ \frac{1}{l} \sum_{k = 1}^l ( \log p_{\theta}(x|z^{(k)}) ).$$
+$$L^B(\theta, \phi; x) = \frac{1}{2} \sum_{j=1}^J(1+\log(\sigma_j^2) - \mu_j^2 - \sigma_j^2)+ \frac{1}{l} \sum_{k = 1}^l ( \log p_{\theta}(x|z^{(k)}) )$$
+
+which is the standard loss under these assumptions.
+
+## Results and Conclusion
+
+In the original paper the VAE is trained on MNIST and the Frey Face dataset with (for the time) impressive results.
+The introduction of variational auto-encoding can be seen as the starting point of the current field of image generation (even if there are
+of course predecessors). Even though it is not competetive with SOTA techniques in image generation (can be greatly effective for other applications though), its design is still captivatingly elegant
+and so to say, very close to the underlying theory.
+
+
 
 
 
