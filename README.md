@@ -5,7 +5,7 @@
 <img src="docs/assets/images/roberts_p2.png" width="600"/>
 
 ## Book Report: The Principles of Deep Learning Theory - Part 1, Neural Networks at Initialization
-<img src="docs/assets/images/roberts_p1" width="1000"/>
+<img src="docs/assets/images/roberts_p1.png" width="600"/>
 
 ### Paper Report 3: Auto-Encoding Variational Bayes
 <img src="docs/assets/images/paper_3.png" width="600"/>
