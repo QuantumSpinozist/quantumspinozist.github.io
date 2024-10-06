@@ -12,6 +12,13 @@
 
 ### Book Report: The Principles of Deep Learning Theory - Part 1, Neural Networks at Initialization
 <img src="docs/assets/images/roberts_p1.png" width="600"/>
+I recently finished reading "The Principles of Deep Learning Theory: An Effective Theory Approach to Understanding Neural Networks" by Roberts and Yaida.
+The book uses tools from statistical mechanics and field theory as an holistic approach to Deep Learning theory. As my original background is in theoretical physics (specifically theoretical statistical physics)
+this was highly intriguing to me. The field of Deep Learning theory is really just in its infancy and there is a lot of research coming in from different angles, using different theoretical and experimental tools.
+The books style is one interesting addition to this mix.
+
+The book does not make this explicit but it can be split into two parts relatively nicely. The first part studies MLPs with weights at gaussian initialization, while the second part deals with learning.
+I will write one article per part.
 [read more](book_report_roberts_p1.md)
 
 ### Paper Report 3: Auto-Encoding Variational Bayes
