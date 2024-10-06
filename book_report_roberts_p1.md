@@ -30,6 +30,30 @@ and wishes to discover the smaller degrees of freedom (think of our example). Bu
 the starting point and also the thing that is actually implemented in the natural habitat of neural nets, namely PyTorch and Tensorflow. The authors now wish to go from
 this true theory to an effective one to gain some theoretical insights about how neural networks work.
 
+Concretely the authors goal is to analytically calculate the leading orders to the probability distribution of the MLPs function
+
+$$ p(f^*) = p(f(x; \theta^* | \text{learning algorithm}; \text{training data})).$$
+
+The randomness explicitly comes in by the initialization of $$ \theta $$ being randomly sampled.
+Now MLPs really only have two relevant scaling hyperparameters, namely the layer width $$n$$ and the
+nets depth $$L$$. Looking at systems with an infinite number of degrees of freedom often leads to simplifications in physics, we
+observe something similar here. While the situation of infinite depth is hopeless, the infinitely wide network is
+a well studied limit, that greatly simplifies the problem. Here our network collapses into a linear operator and the distribution
+from above becomes fully gaussian (we will see this later). Since this makes representation learning impossible a weaker limit is chosen.
+Specifically we wish to obtain the linear order to
+
+$$ p(f^*) = p^{(0)}(f^*) + p^{(1)}(f^*) \frac{1}{n} + \mathcal{O}(\frac{1}{n^2})$$
+(this is the leading order we did not specify earlier). This corresponds to the limit of large but finite
+width network, that is in general quite realistic to actual practice. We can also characterize the network using the relative quantity
+
+$$ r = \frac{L}{n} .$$
+
+For $$ r = 0$$ we again have the infinte width limit. For $$0<r\ll 1$$ we get an effectively deep network, the width expansion truncates and is analytically
+tractable. For $$r\gg 1$$ the network is overly deep and becomes entirely chaotic. In this regime inter layer fluctuations dominate and our expansion becomes intractable.
+
+So in the following we will analytically study large but finite width MLPs to develop an effective theory for the behaviour of non trivial neural networks.
+
+
 
 
 ## 1. Preparation
