@@ -8,7 +8,7 @@
 <img src="docs/assets/images/roberts_p1.png" width="600"/>
 
 ### Paper Report 3: Auto-Encoding Variational Bayes
-<img src="docs/assets/images/paper_3.png" width="600"/>
+<img src="docs/assets/images/paper_3.png" width="1000"/>
 I would like to cover some classic papers in this series, starting with the discovery (or invention, whichever you prefer) of the Variational Autoencoder by Diederik P. Kingma and Max Welling in 2013.
 [read more](paper_report_3.md)
 
