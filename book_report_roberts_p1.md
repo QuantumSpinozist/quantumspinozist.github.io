@@ -32,7 +32,7 @@ this true theory to an effective one to gain some theoretical insights about how
 
 Concretely the authors goal is to analytically calculate the leading orders to the probability distribution of the MLPs function
 
-$$ p(f^*) = p(f(x; \theta^* | \text{learning algorithm}; \text{training data})).$$
+$$ p(f^*) = p(f(x; \theta^*) | \text{learning algorithm}; \text{training data}).$$
 
 The randomness explicitly comes in by the initialization of $$ \theta $$ being randomly sampled.
 Now MLPs really only have two relevant scaling hyperparameters, namely the layer width $$n$$ and the
@@ -43,6 +43,7 @@ from above becomes fully gaussian (we will see this later). Since this makes rep
 Specifically we wish to obtain the linear order to
 
 $$ p(f^*) = p^{(0)}(f^*) + p^{(1)}(f^*) \frac{1}{n} + \mathcal{O}(\frac{1}{n^2})$$
+
 (this is the leading order we did not specify earlier). This corresponds to the limit of large but finite
 width network, that is in general quite realistic to actual practice. We can also characterize the network using the relative quantity
 
