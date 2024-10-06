@@ -1,11 +1,16 @@
 # My Blog
 
+## Paper Report 5: DeepPose: Human Pose Estimation via Deep Neural Networks
+
+## Paper Report 4: Hopfield Networks is all you need
 
 ## Book Report: The Principles of Deep Learning Theory - Part 2, Learning 
 <img src="docs/assets/images/roberts_p2.png" width="600"/>
+[read more](book_report_roberts_p2.md)
 
 ## Book Report: The Principles of Deep Learning Theory - Part 1, Neural Networks at Initialization
 <img src="docs/assets/images/roberts_p1.png" width="600"/>
+[read more](book_report_roberts_p1.md)
 
 ### Paper Report 3: Auto-Encoding Variational Bayes
 <img src="docs/assets/images/paper_3.png" width="1000"/>
