@@ -8,7 +8,7 @@ manor. It does not in any way substitute the original text, especially since I w
 which one might rightfully argue really form the meat of the book (in particular to someone who wishes to adapt some of the techniques for
 their own theoretical undertakings). I highly suggest reading the book, even if the long messy calculations
 can be somewhat hard to get through, especially for people who are unfamiliar with field theory. Under this approach
-this report should be seen as a mostly supplementary ressource, designed to help you see both forest and the trees.
+this report should be seen as a mostly supplementary ressource, designed to help you see both the forest and the trees.
 Nevertheless I hope this text can also be appreciated by people who do not intend to read the whole book.
 
 Unlike in my usual reports I have stuck with the structure of the book in terms of chapter numbering, but I have slightly adjusted the chapter titles at times.
