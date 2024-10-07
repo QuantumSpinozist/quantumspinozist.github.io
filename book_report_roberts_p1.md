@@ -54,10 +54,22 @@ tractable. For $$r\gg 1$$ the network is overly deep and becomes entirely chaoti
 
 So in the following we will analytically study large but finite width MLPs to develop an effective theory for the behaviour of non trivial neural networks.
 
-
-
-
 ## 1. Preparation
+This chapter covers some of the recurring methods used in the coming calculations. Since I will not cover them in detail I will go through most of this section rather quickly.
+The authors start out with a discussion of gaussian integrals and show how moments of multidimensional gaussians can be evaluated using Wicks theorem from QFT (also known as Isserlis theorem in
+probability theory). They introduce the connected two point and four point (also six point etc) correlator as the simplest possible observables for gaussians. Nearly-Gaussian distributions
+now get a first definition as those for which all connected correlators after the two point one are small.
+
+Next the action $$ S(z) $$ (sometimes negative log probability in probability theory) of a distribution is introduced as any function that satisifes
+
+$$ p(z) \propto \exp(-S(z)) $$
+
+which fixes it up to an additive constant. Now for some small $$\epsilon$$ the simplest possible nearly gaussian distribution has the action
+
+$$ S(z) = \frac{1}{2} K^{\mu \nu} z_{\mu} z_{\nu} + \frac{\epsilon}{4!} V^{\mu \nu \rho \lambda} z_{\mu} z_{\nu} z_{\rho} z_{\lambda}.$$
+
+Unlike the book we use einstein notation, meaning we sum over the double indices. For $$\epsilon$$ being zero we recover the purely quadratic expression of the gaussian.
+The authors explicitly demonstrate that the connected four point correlator is proportional to the four point coupling tensor $$ \epsilon V $$, which connects this to our earlier definition.
 
 ## 2. Neural Networks
 
