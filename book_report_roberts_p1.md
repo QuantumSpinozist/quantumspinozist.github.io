@@ -91,6 +91,8 @@ $$ p\left( z^{(L)} \middle| \mathcal{D} \right) = \int \left[ \prod_{\mu=1}^{P} 
 
 ## 3. Effective Theory of Deep Linear Networks at Initialization
 
+Before going to the actual MLP, the authors do the needed calculations for a toy model, namely the deep linear network (without biases).
+
 ## 4. RG Flow of Preactivations
 
 ## 5. Effective Theory of Preactivations at Initialization
