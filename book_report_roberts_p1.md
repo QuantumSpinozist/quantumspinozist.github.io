@@ -77,7 +77,7 @@ we introduce the notation
 
 $$ \mathbb{E} [b_{i_1}^{(l)} b_{i_2}^{(l)}] = \delta_{i_1 i_2} C_b^{(l)} $$
 
-$$ \mathbb{E} [W_{{i_1}{j_1}}^{(l)} W_{{i_2}{j_2}}^{(l)}] =  \delta_{{i_1}{i_2}}  \delta_{{j_1}{j_2}} \frac{C_W^{(l)}}{n_l -1}.$$
+$$ \mathbb{E} [W_{i_1 j_1}^{(l)} W_{i_2 j_2}^{(l)}] =  \delta_{i_1 i_2}  \delta_{j_1 j_2} \frac{C_W^{(l)}}{n_l -1}.$$
 
 As is the norm we assume they are normally distributed. So studying the MLP at initialization means we need to evaluate the integral
 
