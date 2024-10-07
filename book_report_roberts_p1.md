@@ -81,10 +81,11 @@ $$ \mathbb{E} [W_{{i_1}{j_1}}^{(l)} W_{{i_2}{j_2}}^{(l)}] =  \delta_{{i_1}{i_2}}
 
 As is the norm we assume they are normally distributed. So studying the MLP at initialization means we need to evaluate the integral
 
-$$ p\left( z^{(L)} \middle| \mathcal{D} \right) = \int \left[ \prod_{\mu=1}^{P} d\theta_\mu \right] p\left( z^{(L)} \middle| \theta, \mathcal{D} \right) p(\theta).
+$$ p\left( z^{(L)} \middle| \mathcal{D} \right) = \int \left[ \prod_{\mu=1}^{P} d\theta_\mu \right] p\left( z^{(L)} \middle| \theta, \mathcal{D} \right) p(\theta)
  $$
 
- where $$ \mathcal{D} $$ denotes the given input data. Using a dirac delta distributions this can also be rewritten as 
+ where $$ \mathcal{D} $$ denotes the given input data. Using a dirac delta distributions this can also be rewritten as
+ 
  $$ p\left( z^{\text{out}} \middle| \mathcal{D} \right) = \int \left[ \prod_{\mu=1}^{P} d\theta_\mu \right] p(\theta) \left[ \prod_{i=1}^{n_{\text{out}}} \prod_{\alpha \in \mathcal{D}} \delta \left( z_{i;\alpha}^{\text{out}} - f_i(x_\alpha; \theta) \right) \right].
  $$
 
