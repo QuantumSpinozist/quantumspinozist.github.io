@@ -72,6 +72,12 @@ Unlike the book we use einstein notation, meaning we sum over the double indices
 The authors explicitly demonstrate that the connected four point correlator is proportional to the four point coupling tensor $$ \epsilon V $$, which connects this to our earlier definition.
 
 ## 2. Neural Networks
+Most of this chapter covers the basic ingredients needed for neural networks, which we will skip. For the initialization of the parameters at layer $$ l $$
+we introduce the notation
+
+$$ \mathbb{E} [b_{i_1}^{(l)} b_{i_2}^{(l)}] = \delta_{{i_1}{i_2}} C_b^{(l)} $$
+
+$$ \mathbb{E} [W_{{i_1}{j_1}}^{(l)} W_{{i_2}{j_2}}^{(l)}] =  \delta_{{i_1}{i_2}}  \delta_{{j_1}{j_2}} \frac{C_W^{(l)}}{n_l -1}$$
 
 ## 3. Effective Theory of Deep Linear Networks at Initialization
 
