@@ -41,6 +41,9 @@ I don't aim to report on every paper I read, or even necessarily the ones I enjo
 
 ## Miscellaneous
 
+## Some thoughts on the 2024 Nobel prize in physics
+[read more](nobel2024.md)
+
 ### The Bean Problem - A probabilistic Shower Thought
 This is perhaps a rather strange entry but i recently stumbled upon a little exercise in probability theory while cooking.
 [read more](bean_problem.md)
