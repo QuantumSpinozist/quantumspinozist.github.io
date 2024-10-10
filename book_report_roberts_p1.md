@@ -135,4 +135,6 @@ us to truncate the distribution after a given order of $$r$$.
 
 ## 4. RG Flow of Preactivations
 
+
+
 ## 5. Effective Theory of Preactivations at Initialization
