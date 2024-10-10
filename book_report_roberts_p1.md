@@ -104,10 +104,10 @@ vanishes as one would expect. We can express the two point correlator as
 $$ G^{(\ell)}_{\alpha_1 \alpha_2} = \left( C_W \right)^\ell G^{(0)}_{\alpha_1 \alpha_2},
  $$
 
-where we have defined $$ G^{(\ell)}_{\alpha_1 \alpha_2} $$ as the $$ l $$-th layer correlator for both indices being the same and $$ G^{(0)}_{\alpha_1 \alpha_2} \equiv \frac{1}{n_0} \sum_{i=1}^{n_0} x_{i;\alpha_1} x_{i;\alpha_2}
- $$. Notice that this iteration leads to a fixed point at infinity for $$ C_W > 1 $$, one at $$ 0 $$ for $$ C_W < 1 $$ and one at the input correlation for $$ C_W = 1 $$. In the language of the Renormalization Group (more on that later)
- the first two fix points are called trivial, because the value zero or infinity is approached exponentially quickly. The last point is called non trivial since the fix point stabilizes at a finite value. We will later see 
- qualitatively similar results for other activation functions.
+where we have defined $$ G^{(\ell)}_{\alpha_1 \alpha_2} $$ as the $$ l $$-th layer correlator for both indices being the same and $$ G^{(0)}_{\alpha_1 \alpha_2} \equiv \frac{1}{n_0} \sum_{i=1}^{n_0} x_{i;\alpha_1} x_{i;\alpha_2}.$$ 
+Notice that this iteration leads to a fixed point at infinity for $$ C_W > 1 $$, one at $$ 0 $$ for $$ C_W < 1 $$ and one at the input correlation for $$ C_W = 1 $$. In the language of the Renormalization Group (more on that later)
+the first two fix points are called trivial, because the value zero or infinity is approached exponentially quickly. The last point is called non trivial since the fix point stabilizes at a finite value. We will later see 
+qualitatively similar results for other activation functions.
 
  From now on we will denote self correlators (where all indices are the same) by the number of indices. We move on by calculating the four point self correlator
 
