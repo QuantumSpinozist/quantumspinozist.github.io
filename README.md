@@ -43,6 +43,7 @@ I don't aim to report on every paper I read, or even necessarily the ones I enjo
 
 ### Some thoughts on the 2024 Nobel prize in physics
 <img src="docs/assets/images/2024nobel.jpg" width="600"/>
+
 As most people probably know the Nobel prize in physics was awarded to Hinton and Hopfield this year. This has sparked quite some controversy in both the physics and
 the machine learning community. As someone with a background in statistical physics who is currently in the process of getting a graduate degree in machine learning, I feel like
 I am in a somewhat unique position to comment on this. This short article is not supposed to give any definitive answer to the question whether or not the commitees decision was justified,
