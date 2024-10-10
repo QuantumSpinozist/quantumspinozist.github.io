@@ -41,7 +41,8 @@ I don't aim to report on every paper I read, or even necessarily the ones I enjo
 
 ## Miscellaneous
 
-## Some thoughts on the 2024 Nobel prize in physics
+### Some thoughts on the 2024 Nobel prize in physics
+<img src="docs/assets/images/2024nobel.jpg" width="600"/>
 [read more](nobel2024.md)
 
 ### The Bean Problem - A probabilistic Shower Thought
