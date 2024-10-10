@@ -86,12 +86,26 @@ $$ p\left( z^{(L)} \middle| \mathcal{D} \right) = \int \left[ \prod_{\mu=1}^{P} 
 
  where $$ \mathcal{D} $$ denotes the given input data. Using a dirac delta distributions this can also be rewritten as
  
- $$ p\left( z^{\text{out}} \middle| \mathcal{D} \right) = \int \left[ \prod_{\mu=1}^{P} d\theta_\mu \right] p(\theta) \left[ \prod_{i=1}^{n_{\text{out}}} \prod_{\alpha \in \mathcal{D}} \delta \left( z_{i;\alpha}^{\text{out}} - f_i(x_\alpha; \theta) \right) \right].
+ $$ p\left( z^{\text{out}} \middle| \mathcal{D} \right) = \int \left[ \prod_{\mu=1}^{P} d\theta_\mu \right] p(\theta) 
+ \left[ \prod_{i=1}^{n_{\text{out}}} \prod_{\alpha \in \mathcal{D}} \delta \left( z_{i;\alpha}^{\text{out}} - f_i(x_\alpha; \theta) \right) \right].
  $$
 
 ## 3. Effective Theory of Deep Linear Networks at Initialization
 
 Before going to the actual MLP, the authors do the needed calculations for a toy model, namely the deep linear network (without biases).
+In this simplified setting one can explicitly write the output of the $$ l $$-th layer as
+
+$$ z_{i_\ell;\alpha}^{(\ell)} = \sum_{j_0=1}^{n_0} \sum_{j_1=1}^{n_1} \cdots \sum_{j_{\ell-1}=1}^{n_{\ell-1}} W_{i_\ell j_{\ell-1}}^{(\ell)} W_{j_{\ell-1} j_{\ell-2}}^{(\ell-1)} \cdots W_{j_1 j_0}^{(1)} x_{j_0;\alpha}.$$
+
+Notice that one can fully contract the sum ultimately resulting in a single matrix multiplication (I assume most readers already knew this anyway).
+According to the program we have layed out in the previous sections we now calculate the correlators. The single point correlator $$ \mathbb{E} [z_{i_\ell;\alpha}^{(\ell)}] $$
+vanishes as one would expect. We can express the two point correlator as
+
+$$ G^{(\ell)}_{\alpha_1 \alpha_2} = \left( C_W \right)^\ell G^{(0)}_{\alpha_1 \alpha_2},
+ $$
+
+where we have defined $$ G^{(\ell)}_{\alpha_1 \alpha_2} $$ as the $$ l $$-th layer correlator for both indices being the same and $$ G^{(0)}_{\alpha_1 \alpha_2} \equiv \frac{1}{n_0} \sum_{i=1}^{n_0} x_{i;\alpha_1} x_{i;\alpha_2}
+ $$.
 
 ## 4. RG Flow of Preactivations
 
