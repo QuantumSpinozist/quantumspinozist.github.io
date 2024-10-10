@@ -105,8 +105,16 @@ $$ G^{(\ell)}_{\alpha_1 \alpha_2} = \left( C_W \right)^\ell G^{(0)}_{\alpha_1 \a
  $$
 
 where we have defined $$ G^{(\ell)}_{\alpha_1 \alpha_2} $$ as the $$ l $$-th layer correlator for both indices being the same and $$ G^{(0)}_{\alpha_1 \alpha_2} \equiv \frac{1}{n_0} \sum_{i=1}^{n_0} x_{i;\alpha_1} x_{i;\alpha_2}
- $$.
+ $$. Notice that this iteration leads to a fixed point at infinity for $$ C_W > 1 $$, one at $$ 0 $$ for $$ C_W < 1 $$ and one at the input correlation for $$ C_W = 1 $$. In the language of the Renormalization Group (more on that later)
+ the first two fix points are called trivial, because the value zero or infinity is approached exponentially quickly. The last point is called non trivial since the fix point stabilizes at a finite value. We will later see 
+ qualitatively similar results for other activation functions.
 
+ From now on we will denote self correlators (where all indices are the same) by the number of indices. We move on by calculating the four point self correlator
+
+$$ G_4^{(l)} = \left[ \prod_{l' = 1}^{l-1} (1+\frac{1}{n_{l'}}) \right] (G_2^{(l)})^2 = C_W^{2l} \left[ \prod_{l' = 1}^{l-1} (1+\frac{1}{n_{l'}}) \right] (G_2^{(l)})^2.$$
+
+We can see that for the infinite width limit the four point correlator is equal to the two point one. This is as expected since the distribution stays gaussian in this case and all higher correlators are given by the two point one.
+Before we analyze this result a bit more we want to give the higher correlators
 ## 4. RG Flow of Preactivations
 
 ## 5. Effective Theory of Preactivations at Initialization
