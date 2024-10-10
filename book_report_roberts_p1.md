@@ -114,7 +114,25 @@ qualitatively similar results for other activation functions.
 $$ G_4^{(l)} = \left[ \prod_{l' = 1}^{l-1} (1+\frac{1}{n_{l'}}) \right] (G_2^{(l)})^2 = C_W^{2l} \left[ \prod_{l' = 1}^{l-1} (1+\frac{1}{n_{l'}}) \right] (G_2^{(l)})^2.$$
 
 We can see that for the infinite width limit the four point correlator is equal to the two point one. This is as expected since the distribution stays gaussian in this case and all higher correlators are given by the two point one.
-Before we analyze this result a bit more we want to give the higher correlators
+Before we analyze this result a bit more we want to give the higher correlators namely
+
+$$ G_{2m}^{(l)} =  \left[ \prod_{l' = 1}^{l-1} c_{2m}(n_{l'}) \right] C_W^{ml} (G_2^{(0)})^m$$
+
+where we have introduced the general combinatorial factor
+
+$$ c_{2m}(n) = \frac{(\frac{n}{2} - 1 + m)!}{(\frac{n}{2} - 1)!}.$$
+
+Again it is easy to see that this factor goes to one in the infinite width limit. On the other hand the factor is always $$ >1$$ for $$ m>1 $$ and finite width. This means that in the infinte depth limit the higher
+correlators get exponentially large and the resulting behaviour is highly chaotic. Finally we can expand the connected correlators (so those where all lower correlations are substracted) in $$ r $$ giving us
+
+$$ G_4^{(L)} - (G_2^{(L)})^2 = 2r (G_2^{(0)})^2 + \mathcal{O}(r^2)$$
+
+$$ G_6^{(L)} - 3G_2^{(L)} G_4^{(L)} + 2(G_2^{(L)})^3 = 12r^2 (G_2^{(0)})^3 + \mathcal{O}(r^3).$$
+
+So we see that for the realistic case of small $$r$$ we get a nearly gaussian distribution since the connected four point correlator is linearly suppresed in $$r$$ while
+all higher connected correlators are suppressed in even higher powers if $$ r $$. This is a theme that will return again and again throughout our explorations. It enables
+us to truncate the distribution after a given order of $$r$$.
+
 ## 4. RG Flow of Preactivations
 
 ## 5. Effective Theory of Preactivations at Initialization
