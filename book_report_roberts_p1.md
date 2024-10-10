@@ -120,7 +120,7 @@ $$ G_{2m}^{(l)} =  \left[ \prod_{l' = 1}^{l-1} c_{2m}(n_{l'}) \right] C_W^{ml} (
 
 where we have introduced the general combinatorial factor
 
-$$ c_{2m}(n) = \frac{(\frac{n}{2} - 1 + m)!}{(\frac{n}{2} - 1)!} (\frac{2}{n})^m.$$
+$$ c_{2m}(n) = \frac{(\frac{n}{2} - 1 + m)!}{(\frac{n}{2} - 1)!} \left(\frac{2}{n}\right)^m.$$
 
 Again it is easy to see that this factor goes to one in the infinite width limit. On the other hand the factor is always $$ >1$$ for $$ m>1 $$ and finite width. This means that in the infinte depth limit the higher
 correlators get exponentially large and the resulting behaviour is highly chaotic. Finally we can expand the connected correlators (so those where all lower correlations are substracted) in $$ r $$ giving us
