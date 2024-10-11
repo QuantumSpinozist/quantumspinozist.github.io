@@ -2,6 +2,7 @@
 <img src="docs/assets/images/mlspinoza.jpg" width="500"/>
 
 > Will and understanding are one and the same.
+> 
 > -Baruch Spinoza in _Ethica, ordine geometrico demonstrata_
 
 My blog currently mainly consists of paper and sometimes book reports, which mostly cover machine learning related publications.
