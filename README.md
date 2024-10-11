@@ -1,4 +1,12 @@
 # My Blog
+<img src="docs/assets/images/mlspinoza.jpg" width="500"/>
+
+My blog currently mainly consists of paper and sometimes book reports, which mostly cover machine learning related publications.
+These are short articles meant to give a precise but condensed overview over the paper (so more than a TLDR or an abstract).
+The covered papers are not necessarily super new nor does my selection necessarily
+follow any specific criterion. I mainly write these on occasion to aid my own reading. Since I work on this page regularly, there will often
+be articles that are unfinished, consider everything you see work in progress. If you scroll all the way down there is also a section with
+miscellaneous articles (they mostly cover ML related topics too).
 
 ## Paper Reports
 
