@@ -14,6 +14,10 @@ miscellaneous articles (they mostly cover ML related topics too).
 
 ## Paper Reports
 
+> A method is more important than a discovery, since the right method will lead to new and even more important discoveries.
+> 
+> —Lev Landau
+
 ### Paper Report 5: DeepPose: Human Pose Estimation via Deep Neural Networks
 <img src="docs/assets/images/paper_5.png" width="1000"/>
 
