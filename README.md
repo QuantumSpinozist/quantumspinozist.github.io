@@ -4,6 +4,9 @@
 
 ### Paper Report 5: DeepPose: Human Pose Estimation via Deep Neural Networks
 <img src="docs/assets/images/paper_5.png" width="1000"/>
+
+DeepPose is a classic paper for Human Pose Estimation. It was one of the earliest for using Deep Learning in the context of Pose Estimation.
+The method is very straightforward and simple which makes it a very enjoyable read.
 [read more](paper_report_5.md)
 
 ### Paper Report 4: Hopfield Networks is all you need
