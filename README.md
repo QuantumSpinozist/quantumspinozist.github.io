@@ -27,6 +27,11 @@ The method is very straightforward and simple which makes it a very enjoyable re
 
 ### Paper Report 4: Hopfield Networks is all you need
 <img src="docs/assets/images/paper_4.png" width="600"/>
+
+I wanted to write about this paper for quite some time. Even though the general findings of it are quite well known, 
+namely that Hopfield networks (when generalized to continous values) are essentially equivalent to the attention mechanism used in transformers,
+I still found that there are many people who are not aware of this fascinating result. In light of the nobel prize in physics being awarded to John Hopfield
+it felt even more necessary to celebrate this interesting model architecture a bit.
 [read more](paper_report_4.md)
 
 ### Book Report: The Principles of Deep Learning Theory - Part 2, Learning 
