@@ -3,7 +3,7 @@
 
 > Will and understanding are one and the same.
 > 
-> -Baruch Spinoza in _Ethica, ordine geometrico demonstrata_
+> —Baruch Spinoza in _Ethica, ordine geometrico demonstrata_
 
 My blog currently mainly consists of paper and sometimes book reports, which mostly cover machine learning related publications.
 These are short articles meant to give a precise but condensed overview over the paper (so more than a TLDR or an abstract).
