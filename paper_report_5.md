@@ -17,15 +17,31 @@ denoting the position of the $$i$$-th joint. We also introduce notation for norm
 the box center, $$ b_w $$ the width and $$ b_h $$ the height, namely
 
 $$ 
-N(\mathbf{y}_i; \mathbf{b}) = 
+N(\mathbf{y}_i; b) = 
 \begin{pmatrix}
 \frac{1}{b_w} & 0 \\
 0 & \frac{1}{b_h}
 \end{pmatrix}
-(\mathbf{y}_i - \mathbf{b}_c)
+(\mathbf{y}_i - b_c).
 $$
 
+For an input image $$x$$ we use $$ N(\mathbf{x}; b) $$ to denote the cropped image according to the bounding box. If no $$b$$ is given we normalize to the whole image
+(i.e. the bounding box is the image itself). Our neural net is supposed to learn a function $$ \psi(\mathbf{x};\theta) = y$$ that assigns a (normalized) pose vector to each image.
+Since the function returns a normalized pose vector we train it on a normalized dataset $$ D_N = \{ (N(\mathbf{x}), N(\mathbf{y})) | (\mathbf{x}, \mathbf{y}) \in D \} $$ ($$D$$ is the original dataset)
+using an $$ L_2 $$ loss as our learning objective
 
+$$ \arg\min_{\theta} \sum_{(x,y) \in D_N} \sum_{i=1}^{k} \left\| \mathbf{y}_i - \psi_i(x; \theta) \right\|_2^2 .$$
 
-The HPE pipeline starts with object detection, so every input image $$ \mathbf{x} $$ is assigned a bounding box $$ b = (b_c, b_w, b_h) $$ where $$b_c$$ is
-the box center, $$ b_w $$ the width and $$ b_h $$ the height. 
+The neural network is a pretty simple 7 layer CNN. If you wish to know the precise architecture you may look at the illustration on the preview page (or even better in the original paper of course).
+
+This set up already works as a rudimentary model for HPE, but the resulting performance will be pretty lacking. To improve this the pose vector is used as a starting point for an cascade of
+same architecture nets that iteratively estimate a displacement from the previous pose vector. Concretely we use the recursion
+$$
+Stage \,s:\,
+
+\mathbf{y}_i^{s} \leftarrow \mathbf{y}_i^{(s-1)} + N^{-1} \left( \psi_i(N(x; b); \theta_s); b \right)
+$$
+
+$$\text{for} \, b = b_i^{(s-1)}$$
+
+$$b_i^s \leftarrow (\bar{\mathbf{y}}_i^s, \sigma \text{diam}(\mathbf{y}^s), \sigma \text{diam}(\mathbf{y}^s))$$
