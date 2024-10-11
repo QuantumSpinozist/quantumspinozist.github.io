@@ -37,8 +37,8 @@ The neural network is a pretty simple 7 layer CNN. If you wish to know the preci
 This set up already works as a rudimentary model for HPE, but the resulting performance will be pretty lacking. To improve this the pose vector is used as a starting point for an cascade of
 same architecture nets that iteratively estimate a displacement from the previous pose vector. Concretely we use the recursion
 
-$$Stage \,s:\, \mathbf{y}_i^{s} \leftarrow \mathbf{y}_i^{(s-1)} + N^{-1} \left( \psi_i(N(x; b); \theta_s); b \right)$$
+$$\text{Stage} \, s: \quad \mathbf{y}_i^{s} \leftarrow \mathbf{y}_i^{(s-1)} + N^{-1} \left( \psi_i(N(x; b); \theta_s); b \right)$$
 
-$$\text{for} \, b = b_i^{(s-1)}$$
+$$\text{for} \quad b = b_i^{(s-1)}$$
 
 $$b_i^s \leftarrow (\bar{\mathbf{y}}_i^s, \sigma \text{diam}(\mathbf{y}^s), \sigma \text{diam}(\mathbf{y}^s))$$
