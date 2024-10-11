@@ -13,7 +13,17 @@ and optimization. If we compare this with DeepPose, the deep learning approach i
 
 For a pose model with $$ k $$ body joints we define the pose vector 
 $$  \mathbf{y} = (\mathbf{y}_1^\top, \ldots,\mathbf{y}_i^\top ,\ldots ,\mathbf{y}_k^\top )^\top \in \mathbb{R}^{2k} $$ with $$ \mathbf{y}_i = (x_i, y_i)^\top $$
-denoting the position of the $$i$$-th joint.
+denoting the position of the $$i$$-th joint. We also introduce notation for normalizing a pose vector using a bounding box $$ b = (b_c, b_w, b_h) $$ where $$b_c$$ is
+the box center, $$ b_w $$ the width and $$ b_h $$ the height, namely
+
+$$ \[
+N(\mathbf{y}_i; \mathbf{b}) = 
+\begin{pmatrix}
+\frac{1}{b_w} & 0 \\
+0 & \frac{1}{b_h}
+\end{pmatrix}
+(\mathbf{y}_i - \mathbf{b}_c)
+\]$$
 
 
 
