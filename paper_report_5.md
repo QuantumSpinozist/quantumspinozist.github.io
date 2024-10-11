@@ -42,3 +42,13 @@ $$\text{Stage} \, s: \quad \mathbf{y}_i^{s} \leftarrow \mathbf{y}_i^{(s-1)} + N^
 $$\text{for} \quad b = b_i^{(s-1)}$$
 
 $$b_i^s \leftarrow (\mathbf{y}_i^s, \sigma \text{diam}(\mathbf{y}^s), \sigma \text{diam}(\mathbf{y}^s))$$
+
+for every stage $$ s=1, \ldots, S $$ and every joint $$i = 1,\ldots,k $$. Here $$\text{diam}(\mathbf{y})$$ is a specific measure for the distance between opposing joints and is dataset dependent, while
+the scaling factor $\sigma$ is a hyperparameter that needs to be chosen.
+The network will now no longer output the full pose vector but just the 2 dimensional position of the joint. We also now normalize each joint vectorindependently and use additional data augmentation
+$$ D_A^s = \left\{ (N(x; b), N(\mathbf{y}_i; b)) \mid 
+(x, \mathbf{y}_i) \in D, \, \delta \sim \mathcal{N}_i^{(s-1)}, \,
+b = (\mathbf{y}_i + \delta, \sigma \text{diam}(\mathbf{y}), \sigma \text{diam}(\mathbf{y})) 
+\right\}. $$ The gaussian for the augmentation is calibrated on the training data accordingly. The new training objective for stage $$s$$ can then formally be expressed as
+
+$$ \theta_s = \arg\min_{\theta} \sum_{(x,\mathbf{y}_i) \in D_N} \left\| \mathbf{y}_i - \psi_i(x; \theta) \right\|_2^2 .$$
