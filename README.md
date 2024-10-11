@@ -3,8 +3,12 @@
 ## Paper Reports
 
 ### Paper Report 5: DeepPose: Human Pose Estimation via Deep Neural Networks
+<img src="docs/assets/images/paper_5.png" width="600"/>
+[read more](paper_report_5.md)
 
 ### Paper Report 4: Hopfield Networks is all you need
+<img src="docs/assets/images/paper_4.png" width="600"/>
+[read more](paper_report_4.md)
 
 ### Book Report: The Principles of Deep Learning Theory - Part 2, Learning 
 <img src="docs/assets/images/roberts_p2.png" width="600"/>
