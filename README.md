@@ -3,7 +3,7 @@
 ## Paper Reports
 
 ### Paper Report 5: DeepPose: Human Pose Estimation via Deep Neural Networks
-<img src="docs/assets/images/paper_5.png" width="600"/>
+<img src="docs/assets/images/paper_5.png" width="1000"/>
 [read more](paper_report_5.md)
 
 ### Paper Report 4: Hopfield Networks is all you need
