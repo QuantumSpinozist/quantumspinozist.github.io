@@ -16,14 +16,14 @@ $$  \mathbf{y} = (\mathbf{y}_1^\top, \ldots,\mathbf{y}_i^\top ,\ldots ,\mathbf{y
 denoting the position of the $$i$$-th joint. We also introduce notation for normalizing a pose vector using a bounding box $$ b = (b_c, b_w, b_h) $$ where $$b_c$$ is
 the box center, $$ b_w $$ the width and $$ b_h $$ the height, namely
 
-$$ \[
+$$ 
 N(\mathbf{y}_i; \mathbf{b}) = 
 \begin{pmatrix}
 \frac{1}{b_w} & 0 \\
 0 & \frac{1}{b_h}
 \end{pmatrix}
 (\mathbf{y}_i - \mathbf{b}_c)
-\]$$
+$$
 
 
 
