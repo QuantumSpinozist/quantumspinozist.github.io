@@ -41,4 +41,4 @@ $$\text{Stage} \, s: \quad \mathbf{y}_i^{s} \leftarrow \mathbf{y}_i^{(s-1)} + N^
 
 $$\text{for} \quad b = b_i^{(s-1)}$$
 
-$$b_i^s \leftarrow (\bar{\mathbf{y}}_i^s, \sigma \text{diam}(\mathbf{y}^s), \sigma \text{diam}(\mathbf{y}^s))$$
+$$b_i^s \leftarrow (\mathbf{y}_i^s, \sigma \text{diam}(\mathbf{y}^s), \sigma \text{diam}(\mathbf{y}^s))$$
