@@ -18,6 +18,11 @@ miscellaneous articles (they mostly cover ML related topics too).
 > 
 > —Lev Landau
 
+### Paper Report 6: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale
+<img src="docs/assets/images/paper_6.png" width="500"/>
+
+[read more](paper_report_6.md)
+
 ### Paper Report 5: DeepPose: Human Pose Estimation via Deep Neural Networks
 <img src="docs/assets/images/paper_5.png" width="1000"/>
 
