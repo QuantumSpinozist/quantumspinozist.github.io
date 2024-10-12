@@ -21,6 +21,9 @@ miscellaneous articles (they mostly cover ML related topics too).
 ### Paper Report 6: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale
 <img src="docs/assets/images/paper_6.png" width="500"/>
 
+This is another classic paper, which marks the real beginning of Vision Transformers (ViT). While Transformers are not
+as uncontested in Computer Vision as they are in NLP (especially for applications with low inference time requirements like autonomous driving),
+they definetely outperform CNNs in many domains. This paper lays out the basic blueprint procedure for how to teach transformers to see.
 [read more](paper_report_6.md)
 
 ### Paper Report 5: DeepPose: Human Pose Estimation via Deep Neural Networks
