@@ -12,12 +12,16 @@ divided into $$N$$ patches which are then flattened into vectors such that we ge
 We use a latent vector of constant dimension $$D$$ throughout the transformer, so we apply a linear projection $$\mathbf{E} \in \mathbb{R}^{(P^2 C) \times D}$$ to each
 patch vector $$ \mathbf{x}_p^i $$.
 
-Like for text one adds a positional embedding vector to every patch vector. This encodes the position of the patch within the sequence and helps retain the spacial information
-that was lost from splitting up the image (the authors report that using 2D positional encoding did not change the performance). In front of the $$N$$ patch vectors we also 
+
+In front of the $$N$$ patch vectors we 
 add a class token vector $$\mathbf{x}_{\text{class}}$$ that is transformed into a classification vector at the end of the transformer. The token $$\mathbf{x}_{\text{class}}$$ is
 learned during training and is independent of the input.
+Like for text one also adds a positional embedding vector to every patch vector in the form of the matrix $$  \mathbf{E}_{\text{pos}} \in \mathbb{R}^{(N+1) \times D} $$
+($$N+1$$ stems from the inclusion of the class token we just discussed). 
+This encodes the position of the patch within the sequence and helps retain the spatial information
+that was lost from splitting up the image (the authors report that using 2D positional encoding did not change the performance). 
 
-The used transformer encoder is sketched in the image on the preview page, it mainly consists of a self attention and an MLP layer with layer normalization in between.
+The used transformer encoder is sketched in the image on the preview page, it mainly consists of a multi-head self attention and an MLP layer with layer normalization in between.
 The full pipeline can be expressed as 
 
 $$z_0 = \left[ x_{\text{class}}; x_p^1 \mathbf{E}; x_p^2 \mathbf{E}; \cdots ; x_p^N \mathbf{E} \right] + \mathbf{E}_{\text{pos}}, $$
