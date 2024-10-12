@@ -32,3 +32,10 @@ $$z_\ell = \text{MLP}(\text{LN}(z_\ell')) + z_\ell', \quad \ell = 1 \dots L, $$
 
 $$ y = \text{LN}(z_0^L).$$
 
+$$y$$ is the classification vector resulting from the class token as we discussed earlier. In the final step a clssification head is applied to $$y$$.
+In pre-training it is an MLP, in finetuning it is simply a linear classifier. Fine tuning is preferable done on higher resolution images (compared to pre-training),
+which leads to a larger number of patch vectors. If the sequence gets to long one needs to interpolate the pre-trained positional embedding to retain the
+information about each patches location in the image correctly.
+
+## Evaluation
+
