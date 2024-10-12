@@ -7,9 +7,9 @@
 
 ## Methodology
 
-The input image $$ \mathbf{x} \in \mathbb{R}^{H\cross W\cross C}$$ ($$ H$$ is height, $$ W$$ is width, $$ C$$ is the number of colors) is
-divided into $$N$$ patches which are then flattened into vectors such that we get an overall patch matrix $$  \mathbf{x}_p \in \mathbb{R}^{N \cross (P^2 C)} $$ ($$ P$$ is the patch size).
-We use a latent vector of constant dimension $$D$$ throughout the transformer, so we apply a linear projection $$\mathbf{E} \in \mathbb{R}^{(P^2 C) \cross D}$$ to each
+The input image $$ \mathbf{x} \in \mathbb{R}^{H\times W\times C}$$ ($$ H$$ is height, $$ W$$ is width, $$ C$$ is the number of colors) is
+divided into $$N$$ patches which are then flattened into vectors such that we get an overall patch matrix $$  \mathbf{x}_p \in \mathbb{R}^{N \times (P^2 C)} $$ ($$ P$$ is the patch size).
+We use a latent vector of constant dimension $$D$$ throughout the transformer, so we apply a linear projection $$\mathbf{E} \in \mathbb{R}^{(P^2 C) \times D}$$ to each
 patch vector $$ \mathbf{x}_p^i $$.
 
 Like for text one adds a positional embedding vector to every patch vector. This encodes the position of the patch within the sequence and helps retain the spacial information
