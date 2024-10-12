@@ -20,13 +20,13 @@ learned during training and is independent of the input.
 The used transformer encoder is sketched in the image on the preview page, it mainly consists of a self attention and an MLP layer with layer normalization in between.
 The full pipeline can be expressed as 
 
-$$z_0 &= \left[ x_{\text{class}}; x_p^1 \mathbf{E}; x_p^2 \mathbf{E}; \cdots ; x_p^N \mathbf{E} \right] + \mathbf{E}_{\text{pos}}, $$
+$$z_0 = \left[ x_{\text{class}}; x_p^1 \mathbf{E}; x_p^2 \mathbf{E}; \cdots ; x_p^N \mathbf{E} \right] + \mathbf{E}_{\text{pos}}, $$
 
-$$\mathbf{E} &\in \mathbb{R}^{(P^2 \cdot C) \times D}, \quad \mathbf{E}_{\text{pos}} \in \mathbb{R}^{(N+1) \times D} $$
+$$\mathbf{E} \in \mathbb{R}^{(P^2 \cdot C) \times D}, \quad \mathbf{E}_{\text{pos}} \in \mathbb{R}^{(N+1) \times D} $$
 
-$$z_\ell' &= \text{MSA}(\text{LN}(z_{\ell-1})) + z_{\ell-1}, \quad \ell = 1 \dots L, $$
+$$z_\ell' = \text{MSA}(\text{LN}(z_{\ell-1})) + z_{\ell-1}, \quad \ell = 1 \dots L, $$
 
-$$z_\ell &= \text{MLP}(\text{LN}(z_\ell')) + z_\ell', \quad \ell = 1 \dots L, $$
+$$z_\ell = \text{MLP}(\text{LN}(z_\ell')) + z_\ell', \quad \ell = 1 \dots L, $$
 
-$$ y &= \text{LN}(z_0^L).$$
+$$ y = \text{LN}(z_0^L).$$
 
