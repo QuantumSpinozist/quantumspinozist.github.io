@@ -39,3 +39,5 @@ information about each patches location in the image correctly.
 
 ## Evaluation
 
+The authors compare the ViT with ResNets and a CNN ViT hybrid model. As pre-training datasets they use ImageNet-1k, ImageNet-21k and JFT with 18k classes.
+The trained models are then evaluated on differend downstream benchmark tasks namely, Imagenet-1k original validation labels (and cleaned up labels), CIFAR-10/100,
