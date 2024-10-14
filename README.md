@@ -9,11 +9,18 @@ My blog currently mainly consists of paper and sometimes book reports, which mos
 These are short articles meant to give a precise but condensed overview over the paper (so more than a TLDR or an abstract).
 The covered papers are not necessarily super new nor does my selection necessarily
 follow any specific criterion. I mainly write these on occasion to aid my own reading. Since I work on this page regularly, there will often
-be articles that are unfinished, consider everything you see work in progress. If you scroll all the way down there is also a section with
-miscellaneous articles (they mostly cover ML related topics too).
+be articles that are unfinished, consider everything you see work in progress. 
+
+To give myself the challenge of writing about very recent papers weekly I have also started a section where I review a paper
+that has gained a lot of attention this week. It does by no means have to be the best paper of the week (whoever would be able to decide that anyway),
+just one that gas garnered a lot of attention in the given week.
+
+If you scroll all the way down there is also a section with
+miscellaneous articles.
 
 ## Table of Contents
 - [Paper Reports](#paper-reports)
+- [Paper of the Week](#paper-of-the-week)
 - [Miscellaneous](#miscellaneous)
 
 ## Paper Reports
@@ -78,6 +85,10 @@ I want to start writing small reports on papers I have recently read (not necess
 
 I don't aim to report on every paper I read, or even necessarily the ones I enjoyed the most—just the ones that made an impression on me for whatever reason. These reports will mostly summarize the articles, but I also want to include my own commentary and reflections where relevant.
 [read more](paper_report_1.md)
+
+## Paper of the Week
+
+
 
 ## Miscellaneous
 
