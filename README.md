@@ -12,6 +12,10 @@ follow any specific criterion. I mainly write these on occasion to aid my own re
 be articles that are unfinished, consider everything you see work in progress. If you scroll all the way down there is also a section with
 miscellaneous articles (they mostly cover ML related topics too).
 
+## Table of Contents
+- [Paper Reports](#Paper Reports)
+- [Miscellaneous](#Miscellaneous)
+
 ## Paper Reports
 
 > A method is more important than a discovery, since the right method will lead to new and even more important discoveries.
