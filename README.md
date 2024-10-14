@@ -88,7 +88,9 @@ I don't aim to report on every paper I read, or even necessarily the ones I enjo
 
 ## Paper of the Week
 
+### 07.10.24 - 13.10.24: Differential Transformer
 
+### 30.09.24 - 06.10.24: Were RNNs All We Needed?
 
 ## Miscellaneous
 
