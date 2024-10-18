@@ -30,7 +30,7 @@ miscellaneous articles.
 > —Lev Landau
 
 ### Paper Report 7: Attention Is All You Need
-<img src="docs/assets/images/paper_7.png" width="500"/>
+<img src="docs/assets/images/paper_7.png" width="1000"/>
 
 [read more](paper_report_7.md)
 
