@@ -29,6 +29,12 @@ miscellaneous articles.
 > 
 > —Lev Landau
 
+### Paper Report 8: A Learning Algoritm for Boltzmann machines
+<img src="docs/assets/images/paper_8.png" width="1000"/>
+
+[read more](paper_report_8.md)
+
+
 ### Paper Report 7: Attention Is All You Need
 <img src="docs/assets/images/paper_7.png" width="1000"/>
 
