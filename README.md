@@ -35,7 +35,7 @@ miscellaneous articles.
 [read more](paper_report_8.md)
 
 
-### Paper Report 7: Attention Is All You Need
+### Paper Report 7: Segment Anything
 <img src="docs/assets/images/paper_7.png" width="1000"/>
 
 [read more](paper_report_7.md)
