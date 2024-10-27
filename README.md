@@ -37,6 +37,7 @@ miscellaneous articles.
 
 ### Paper Report 7: Masked Autoencoders Are Scalable Vision Learners
 <img src="docs/assets/images/paper_7.png" width="1000"/>
+This paper presents a simple and highly effective way of learning visual representations under self-supervision. The authors present a novel masked autoencoder (MAE) to achieve this.
 
 [read more](paper_report_7.md)
 
