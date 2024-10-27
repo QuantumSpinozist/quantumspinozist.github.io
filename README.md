@@ -29,7 +29,7 @@ miscellaneous articles.
 > 
 > —Lev Landau
 
-### Paper Report 8: A Learning Algoritm for Boltzmann machines
+### Paper Report 8: Segment Anything
 <img src="docs/assets/images/paper_8.png" width="1000"/>
 
 [read more](paper_report_8.md)
