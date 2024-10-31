@@ -29,6 +29,12 @@ miscellaneous articles.
 > 
 > —Lev Landau
 
+### Paper Report 9: Siamese Neural Networks for One-shot Image Recognition
+<img src="docs/assets/images/paper_9.png" width="1000"/>
+
+[read more](paper_report_9.md)
+
+
 ### Paper Report 8: Segment Anything
 <img src="docs/assets/images/paper_8.png" width="1000"/>
 
