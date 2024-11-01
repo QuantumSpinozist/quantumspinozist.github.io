@@ -31,12 +31,18 @@ miscellaneous articles.
 
 ### Paper Report 9: Siamese Neural Networks for One-shot Image Recognition
 <img src="docs/assets/images/paper_9.png" width="1000"/>
+This is an older paper (from 2015), presenting an early study on metric learning for one shot image classification via the
+use of a Siamese Network. There is a reimplementation on my github which this report is
+meant to accompany ([One-Shot-Image-Recognition](https://github.com/QuantumSpinozist/One-Shot-Image-Recognition)).
 
 [read more](paper_report_9.md)
 
 
 ### Paper Report 8: Segment Anything
 <img src="docs/assets/images/paper_8.png" width="1000"/>
+Segment Anything is a large vision foundation model specializing on segmentation.
+The project also employs an extensive data annotation procedure to create the largest segmentation
+dataset to date.
 
 [read more](paper_report_8.md)
 
