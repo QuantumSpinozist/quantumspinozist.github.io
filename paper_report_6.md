@@ -4,6 +4,10 @@
 
 ## Introduction
 
+After their invention in 2017, transformers quickly overtook all other model architectures in NLP. While there were experiments
+trying to bring transformers into vision, there was a significant time span in which it was not clear if transformers
+would remain as sequence to sequence machines, primarily staying in the NLP domain. This paper marked the turning point in this
+question, as it showed that pure transformers in the form of vision transformers could outperform CNNs in vision tasks.
 
 ## Methodology
 
@@ -41,3 +45,9 @@ information about each patches location in the image correctly.
 
 The authors compare the ViT with ResNets and a CNN ViT hybrid model. As pre-training datasets they use ImageNet-1k, ImageNet-21k and JFT with 18k classes.
 The trained models are then evaluated on differend downstream benchmark tasks namely, Imagenet-1k original validation labels (and cleaned up labels), CIFAR-10/100,
+ Oxford-IIIT Pets and Oxford Flowers-102.
+
+The ViTs generally outperform the other methods or are on par. I will not cover the conducted experiments in more detail as the great performance of ViTs on many vision tasks has been shown
+time and time again since the release of this paper.
+
+## Conclusion
