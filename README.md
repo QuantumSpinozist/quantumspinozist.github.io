@@ -115,6 +115,8 @@ Inspired by techniques from signal processing the authors introduce differential
 [read more](13_10_24.md)
 
 ### 30.09.24 - 06.10.24: Were RNNs All We Needed?
+This paper asks whether we can make RNN architectures competetive with the zoo of transformer alternatives (Mamba and friends) by modifying
+them to be trainable in parallel (like said zoo).
 [read more](6_10_24.md)
 
 ## Miscellaneous
