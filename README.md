@@ -34,7 +34,6 @@ miscellaneous articles.
 This is an older paper (from 2015), presenting an early study on metric learning for one shot image classification via the
 use of a Siamese Network. There is a reimplementation on my github which this report is
 meant to accompany ([One-Shot-Image-Recognition](https://github.com/QuantumSpinozist/One-Shot-Image-Recognition)).
-
 [read more](paper_report_9.md)
 
 
@@ -43,14 +42,12 @@ meant to accompany ([One-Shot-Image-Recognition](https://github.com/QuantumSpino
 Segment Anything is a large vision foundation model specializing on segmentation.
 The project also employs an extensive data annotation procedure to create the largest segmentation
 dataset to date.
-
 [read more](paper_report_8.md)
 
 
 ### Paper Report 7: Masked Autoencoders Are Scalable Vision Learners
 <img src="docs/assets/images/paper_7.png" width="1000"/>
 This paper presents a simple and highly effective way of learning visual representations under self-supervision. The authors present a novel masked autoencoder (MAE) to achieve this.
-
 [read more](paper_report_7.md)
 
 
