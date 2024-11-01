@@ -51,3 +51,10 @@ The ViTs generally outperform the other methods or are on par. I will not cover 
 time and time again since the release of this paper.
 
 ## Conclusion
+
+This paper shows, in convincing fashion, something we have seen in many domains ever since. Namely that large amounts of data and scale
+can (!) trump inductive bias, even in vision. At the same time we should not be to general and forget all subtelties.
+While in NLP transformers are comfortably uncontested, there is much more of a coexistence in vision.
+For example: in many real time applications, like autonomous driving, CNNs are still used more, since they are (at least believed to be by many)
+faster at inference, especially on higher resolution images (this idea is very common but should be taken with a significant amount of skepticism,
+as it is very contested, here is an article by Luca Beyer, who is among the first authors of the paper, on the matter [http://lucasb.eyer.be/articles/vit_cnn_speed.html](http://lucasb.eyer.be/articles/vit_cnn_speed.html)).
