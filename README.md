@@ -110,6 +110,9 @@ I don't aim to report on every paper I read, or even necessarily the ones I enjo
 
 ## Paper of the Week
 
+### 14.10.24 - 20.10.24: GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models
+[read more](20_10_24.md)
+
 ### 07.10.24 - 13.10.24: Differential Transformer
 Inspired by techniques from signal processing the authors introduce differential attention, in which the regular attention output is instead calculated as the difference between two independent attention maps. The idea is that, similar to noise cancellation in headphones, this cancels out noise in the attention pattern, ensuring attention is primarily allocated to relevant context.
 [read more](13_10_24.md)
