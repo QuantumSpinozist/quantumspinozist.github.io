@@ -5,7 +5,7 @@ plugins:
 markdown: kramdown 
 
 title: [QuantumSpinozist]
-description: ['I like Machines that learn, Programming languages that are (not actually) named after snakes, Hilbert spaces that are separable and all things Markovian. I might write about these things sometimes but also others.']
+description: ['I like Machines that learn and Programming languages that are (not actually) named after snakes among other things. I might write about these sometimes.']
 
 # Enable MathJax for LaTeX
 katex: false  # Make sure KaTeX is not used if MathJax is preferred
