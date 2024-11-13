@@ -3,6 +3,7 @@
 **Paper**: [https://arxiv.org/pdf/1312.4659](https://arxiv.org/pdf/1312.4659)
 
 ## Introduction
+I am working on PyTorch reimplementation at [DeepPose](https://github.com/QuantumSpinozist/Deep-Pose) (work in progress).
 
 DeepPose presents one of the earliest successful attempts of using deep learning for human pose estimation (HPE). It also provides an interesting blueprint for how the deep learning revolution transformed many application problems, especially in domains like computer vision. Before deep learning, HPE required a combination of complex handcrafted features, statistical models, and optimization techniques. In contrast, DeepPose's deep learning approach is much simpler, while significantly outperforming previous results.
 
