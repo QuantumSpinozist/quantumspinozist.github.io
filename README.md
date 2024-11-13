@@ -11,7 +11,7 @@ The covered papers are not necessarily super new nor does my selection necessari
 follow any specific criterion. I mainly write these on occasion to aid my own reading. Since I work on this page regularly, there will often
 be articles that are unfinished, consider everything you see work in progress. 
 
-To give myself the challenge of writing about very recent papers weekly I have also started a section where I review a paper
+To give myself the challenge of writing about very recent papers (mostly and with some lag) weekly I have also started a section where I review a paper
 that has gained a lot of attention this week. It does by no means have to be the best paper of the week (whoever would be able to decide that anyway),
 just one that gas garnered a lot of attention in the given week.
 
