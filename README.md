@@ -1,5 +1,4 @@
 # My Blog
-<img src="docs/assets/images/mlspinoza.jpg" width="500"/>
 
 > Will and understanding are one and the same.
 > 
@@ -11,9 +10,7 @@ The covered papers are not necessarily super new nor does my selection necessari
 follow any specific criterion. I mainly write these on occasion to aid my own reading. Since I work on this page regularly, there will often
 be articles that are unfinished, consider everything you see work in progress. 
 
-To give myself the challenge of writing about very recent papers (mostly and with some lag) weekly I have also started a section where I review a paper
-that has gained a lot of attention this week. It does by no means have to be the best paper of the week (whoever would be able to decide that anyway),
-just one that gas garnered a lot of attention in the given week.
+I also have a section where I write shorter reports on very recent and much discussed papers.
 
 If you scroll all the way down there is also a section with
 miscellaneous articles.
@@ -108,16 +105,16 @@ I want to start writing small reports on papers I have recently read (not necess
 I don't aim to report on every paper I read, or even necessarily the ones I enjoyed the most—just the ones that made an impression on me for whatever reason. These reports will mostly summarize the articles, but I also want to include my own commentary and reflections where relevant.
 [read more](paper_report_1.md)
 
-## Paper of the Week
+## Very Recent Papers
 
-### 14.10.24 - 20.10.24: GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models
+### GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models
 [read more](20_10_24.md)
 
-### 07.10.24 - 13.10.24: Differential Transformer
+### Differential Transformer
 Inspired by techniques from signal processing the authors introduce differential attention, in which the regular attention output is instead calculated as the difference between two independent attention maps. The idea is that, similar to noise cancellation in headphones, this cancels out noise in the attention pattern, ensuring attention is primarily allocated to relevant context.
 [read more](13_10_24.md)
 
-### 30.09.24 - 06.10.24: Were RNNs All We Needed?
+### Were RNNs All We Needed?
 This paper asks whether we can make RNN architectures competetive with the zoo of transformer alternatives (Mamba and friends) by modifying
 them to be trainable in parallel (like said zoo).
 [read more](6_10_24.md)
