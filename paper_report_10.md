@@ -15,3 +15,9 @@ To explicitly force the predicted density to be direction independent (multiview
 
 
 ## Volume Rendering with Neural Radiance Fields
+
+A ray $\mathbf{r}(t)=\mathbf{o} + t\mathbf{d}$ with $t\in[t_n, t_f]$ is assigned the expected color 
+
+$$ C(\mathbf{r})=\int_{t_n}^{t_f} dt\sigma(\mathbf{r}(t))\mathbf{c}(t, \mathbf{d}) \exp\left(-\int_{t_n}^t ds \sigma(\mathbf{r}(s)) \right). $$
+
+The integral is approximated using probabilistic quadrature.
