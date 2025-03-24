@@ -65,6 +65,11 @@ No recording available
 > 
 > —Lev Landau
 
+### Paper Report 10: NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis
+<img src="docs/assets/images/paper_10.png" width="1000"/>
+NeRF is a key paper in 3D Computer Vision from 2020. It lead to a lot of subsequent research in view synthesis up until today.
+[read more](paper_report_10.md)
+
 ### Paper Report 9: Siamese Neural Networks for One-shot Image Recognition
 <img src="docs/assets/images/paper_9.png" width="1000"/>
 This is an older paper (from 2015), presenting an early study on metric learning for one shot image classification via the
@@ -83,7 +88,7 @@ dataset to date.
 
 ### Paper Report 7: Masked Autoencoders Are Scalable Vision Learners
 <img src="docs/assets/images/paper_7.png" width="1000"/>
-This paper presents a simple and highly effective way of learning visual representations under self-supervision. The authors present a novel masked autoencoder (MAE) to achieve this.
+This paper presents a simple and highly effective way of learning visual representations under self-supervision. The authors present masked autoencoder (MAE) to achieve this.
 [read more](paper_report_7.md)
 
 
