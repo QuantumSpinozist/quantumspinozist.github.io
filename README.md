@@ -35,7 +35,7 @@ the parameters that are most impactful for forgetting the target data.
 **Slides**:
 <a href="slides/presentation_3.pdf" class="image fit"><img src="docs/assets/images/presentation_3_cover.png" width="500" alt=""></a>
 
-**Recording**: [https://www.youtube.com/watch?v=caP30Kq-_ME&t=2401s](https://www.youtube.com/watch?v=caP30Kq-_ME&t=2401s)
+**Recording**: [https://www.youtube.com/watch?v=caP30Kq-_ME](https://www.youtube.com/watch?v=caP30Kq-_ME)
 
 
 ### Paper Presentation 2: LanguageBind: Extending Video-Language Pretraining to N-modality by Language-based Semantic Alignment
