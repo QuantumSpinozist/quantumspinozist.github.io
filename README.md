@@ -24,7 +24,7 @@ miscellaneous articles.
 ## Reading Group Recordings
 
 ### Paper Presentation 3: One-Shot Machine Unlearning with Mnemonic Code
-<a href="slides/presentation_3.pdf" class="image fit"><img src="docs/assets/images/presentation_3_cover.png" alt=""></a>
+<a href="slides/presentation_3.pdf" class="image fit"><img src="docs/assets/images/presentation_3_cover.png" width="500" alt=""></a>
 
 
 ## Paper Reports
