@@ -12,6 +12,8 @@ be articles that are unfinished, consider everything you see work in progress.
 
 I also have a section where I write shorter reports on very recent and much discussed papers.
 
+Additionally this page functions as a secondary archive for my Machine Learning Reading Group in which we present research papers to one another.
+
 If you scroll all the way down there is also a section with
 miscellaneous articles.
 
@@ -32,6 +34,9 @@ the parameters that are most impactful for forgetting the target data.
 
 **Slides**:
 <a href="slides/presentation_3.pdf" class="image fit"><img src="docs/assets/images/presentation_3_cover.png" width="500" alt=""></a>
+
+**Recording**: [https://www.youtube.com/watch?v=caP30Kq-_ME&t=2401s](https://www.youtube.com/watch?v=caP30Kq-_ME&t=2401s)
+
 
 ### Paper Presentation 2: LanguageBind: Extending Video-Language Pretraining to N-modality by Language-based Semantic Alignment
 LanguageBind shows how VLMs can be extended to more than two modalities by using language as the bind.
