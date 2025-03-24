@@ -16,9 +16,15 @@ If you scroll all the way down there is also a section with
 miscellaneous articles.
 
 ## Table of Contents
+- [Reading Group Recordings](#reading-group-recordings)
 - [Paper Reports](#paper-reports)
 - [Paper of the Week](#paper-of-the-week)
 - [Miscellaneous](#miscellaneous)
+
+## Reading Group Recordings
+
+
+
 
 ## Paper Reports
 
