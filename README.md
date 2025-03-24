@@ -24,7 +24,34 @@ miscellaneous articles.
 ## Reading Group Recordings
 
 ### Paper Presentation 3: One-Shot Machine Unlearning with Mnemonic Code
+Machine Unlearning is about making a model forget about specific data it saw during training. While this is key for privacy and security
+issues, many approaches are computationally intensive. The authors present a very efficient approach that uses Fisher Information to identify
+the parameters that are most impactful for forgetting the target data.
+
+**Paper**: [https://arxiv.org/pdf/2306.05670](https://arxiv.org/pdf/2306.05670)
+
+**Slides**:
 <a href="slides/presentation_3.pdf" class="image fit"><img src="docs/assets/images/presentation_3_cover.png" width="500" alt=""></a>
+
+### Paper Presentation 2: LanguageBind: Extending Video-Language Pretraining to N-modality by Language-based Semantic Alignment
+LanguageBind shows how VLMs can be extended to more than two modalities by using language as the bind.
+
+**Paper**: [https://arxiv.org/pdf/2310.01852](https://arxiv.org/pdf/2310.01852)
+
+No slides or recording available
+
+
+### Paper Presentation 1: Accurate predictions on small data with a tabular foundation model
+The authors present TabPFN, a generative transformer-based foundation model for tabular datasets with up to 10k samples, that outperforms the
+SOTA gradient-boosted decision tree models like XGboost.
+
+**Paper**: [https://www.nature.com/articles/s41586-024-08328-6#auth-Frank-Hutter-Aff1-Aff3-Aff6](https://www.nature.com/articles/s41586-024-08328-6#auth-Frank-Hutter-Aff1-Aff3-Aff6)
+
+**Slides**:
+<a href="slides/presentation_1.pdf" class="image fit"><img src="docs/assets/images/presentation_1_cover.png" width="500" alt=""></a>
+
+
+No recording available
 
 
 ## Paper Reports
