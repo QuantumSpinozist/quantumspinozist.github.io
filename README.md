@@ -25,6 +25,15 @@ miscellaneous articles.
 
 ## Reading Group Recordings
 
+### Paper Presentation 4: Transformers without Normalization
+
+**Paper**: [https://arxiv.org/pdf/2503.10622](https://arxiv.org/pdf/2503.10622)
+
+**Slides**: [https://github.com/QuantumSpinozist/quantumspinozist.github.io/blob/main/slides/presentation_4.pdf](https://github.com/QuantumSpinozist/quantumspinozist.github.io/blob/main/slides/presentation_4.pdf)
+
+**Recording**: [https://www.youtube.com/watch?v=EB4leH9RMfI](https://www.youtube.com/watch?v=EB4leH9RMfI)
+
+
 ### Paper Presentation 3: One-Shot Machine Unlearning with Mnemonic Code
 Machine Unlearning is about making a model forget about specific data it saw during training. While this is key for privacy and security
 issues, many approaches are computationally intensive. The authors present a very efficient approach that uses Fisher Information to identify
