@@ -27,6 +27,11 @@ miscellaneous articles.
 
 ### Paper Presentation 4: Transformers without Normalization
 
+This week we cover the new and highly discussed paper "Transformer without Normalization".
+Based on an empirical investigation of LayerNorm the authors develop a simple Tanh based alternative
+that achieves equivalent performance on a variety of tasks, while (possibly) being faster in training
+and inference.
+
 **Paper**: [https://arxiv.org/pdf/2503.10622](https://arxiv.org/pdf/2503.10622)
 
 **Slides**: [https://github.com/QuantumSpinozist/quantumspinozist.github.io/blob/main/slides/presentation_4.pdf](https://github.com/QuantumSpinozist/quantumspinozist.github.io/blob/main/slides/presentation_4.pdf)
