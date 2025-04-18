@@ -33,7 +33,7 @@ The joint regressor is linear using a learned matrix $\mathcal{J}$ that is appli
 
 ## Model
 
-First we sketch the overall model pipeline. The image is fed through a CNN based encoder resulting in a representation $\phi$ from which we want to infer $\Theta = (\boldsymbol \theta, \boldsymbol \beta, R, t, s)$.
+First we sketch the overall model pipeline. The image is fed through a CNN based encoder (ResNet-50) resulting in a representation $\phi$ from which we want to infer $\Theta = (\boldsymbol \theta, \boldsymbol \beta, R, t, s)$.
 Here the first two paramter vectors correspond to the SMPL shape and pose which we discussed in the last section, while the latter three define the camera (view angle, position, scale). Based on $\Theta$ we project the keypoints
 onto the image and compare them with the 2D ground truth labels. The reconstruction of $\Theta$ is done in an iterative way as we will see in a moment.
 As the second component of the pipeline an adversarial discriminator is trained to distinguish between the reconstructed SMPL parameters and the "real" ones we get from a database. This regularizes the SMPL, biasing the model
@@ -43,7 +43,16 @@ $$ L = \lambda (L_{reprojection} + L_{3D;optional}) + L_{adversarial} $$
 
 where the second term is used when 3D information is available during reconstruction, and the $\lambda$ denotes a loss weight hyperparameter.
 
-
 ### Iterative 3D Regression with Feedback
 
+Doing the reconstruction directly is not possible with reasonable accuracy, instead the authors use an iterative approach. The regression module (a two layer MLP) takes in $\phi$ and the current estimate $\Theta_t$ and produces
+a correction for $\Theta$. In their implementation this is repeated three times. The reprojection loss uses the L1 metric. For the optional 3D loss, that is used when Motion capture data is available, the L2 losses of comparing the
+3D positions of the joints as well as the parameter vectors are added.
+
+
 ### Factorized Adversarial Prior
+
+Since SMPL is so explicit we can decompose or factorize the discriminator, making training much easier. Specifically the authors use a discriminator for the shape and again decompose the hiearchical kinematic tree structure of the
+pose parameters to get individual discriminators for each joint. Overall they end up with K+2 small networks. Because of this and since we have the additional reprojection loss (avoiding mode collapse) the adversarial training
+does not suffer from the usual problems one gets with GANs.
+
