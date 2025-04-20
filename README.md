@@ -25,6 +25,12 @@ miscellaneous articles.
 
 ## Reading Group Recordings
 
+### Paper Presentation 5: How Should an Agent Practice? 
+
+**Paper** [https://arxiv.org/pdf/1912.07045](https://arxiv.org/pdf/1912.07045)
+
+**Recording** [https://www.youtube.com/watch?v=sKgK2J0TA5E](https://www.youtube.com/watch?v=sKgK2J0TA5E)
+
 ### Paper Presentation 4: Transformers without Normalization
 
 This week we cover the new and highly discussed paper "Transformer without Normalization".
