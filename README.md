@@ -85,6 +85,9 @@ No recording available
 > 
 > —Lev Landau
 
+### Paper Report 11: End-to-end Recovery of Human Shape and Pose
+[read more](paper_report_11.md)
+
 ### Paper Report 10: NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis
 <img src="docs/assets/images/paper_10.png" width="1000"/>
 NeRF is a key paper in 3D Computer Vision from 2020. It lead to a lot of subsequent research in view synthesis up until today.
